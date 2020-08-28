@@ -1,0 +1,479 @@
+*{
+    font-family: 'Arimo', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.img-eft{
+    overflow: hidden;
+    height: 140vh;
+    background: none;
+}
+.content{
+    overflow: visible;
+}
+.content__title{
+    top: -90px;
+    animation: anim-title 1.5s 1 forwards;
+}
+
+@keyframes anim-title{
+    0%{
+        font-size: 150px;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+
+.bg-img{
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    z-index: 5;
+}
+
+.nav-logo {
+    color: white;
+    float: left;
+    animation: anim 1s 1 forwards;
+}
+
+@keyframes anim {
+    0% {
+        margin-left: -100px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.nav{
+    width: 100%;
+    padding: 8px 14px;
+}
+
+.min-nav{
+    float: right;
+}
+.nav::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.min-nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.min-nav ul li{
+    padding: 0px 10px;
+   
+}
+
+.min-nav ul li a,
+.min-nav ul li button{
+    position: relative;
+    left: -1500px;
+}
+
+.min-nav ul .li-6 button{
+    animation: anim-2 1s 1 forwards; 
+}
+
+.min-nav ul .li-5 a{
+    animation: anim-2 1s 0.3s 1 forwards; 
+}
+
+.min-nav ul .li-4 a{
+    animation: anim-2 1s 0.6s 1 forwards; 
+}
+
+.min-nav ul .li-3 a{
+    animation: anim-2 1s 0.9s 1 forwards; 
+}
+
+.min-nav ul .li-2 a{
+    animation: anim-2 1s 1.2s 1 forwards; 
+}
+
+.min-nav ul .li-1 a{
+    animation: anim-2 1s 1.5s 1 forwards; 
+}
+@keyframes anim-2{
+    0%{
+        left: -1500px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.min-nav ul li a{
+    color: rgb(197, 193, 193);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0px;
+    display: inline-block;
+}
+
+.min-nav ul li a:hover{
+    color: white;
+}
+
+.big-tx button,
+.min-nav ul li button:focus,
+.min-nav ul li button{
+    padding: 10px 30px;
+    background: none;
+    color: white;
+    border: 3px solid white;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.big-tx button::before,
+.min-nav ul li button::before{
+    content: "";
+    width: 120%;
+    height: 0px;
+    background-color: rgba(255, 1, 1, 0.623);
+    position: absolute;
+    z-index: -1;
+    left: -15px;
+    top: -30px;
+    border-radius: 0% 0% 50% 50%;
+    transition: 0.7s;
+}
+
+.big-tx button:hover::before,
+.min-nav ul li:hover button::before{
+    height: 100px;
+}
+
+
+.nav-logo h1{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.nav-logo h2{
+    margin: -6px 0px;
+    padding: 0px 0px;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 7px;
+}
+
+.big-tx{
+    position: absolute;
+    width: 100%;
+    animation: anim-big-text 1.5s 1 forwards;
+}
+
+@keyframes anim-big-text{
+    0%{
+        bottom: 0px;
+    }
+
+    100%{
+        bottom: 360px;
+    }
+}
+
+.big-tx h1{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+
+.big-tx button{
+   position: relative;
+   left: 50%;
+   transform: translate(-50%,0%);
+}
+
+
+.arrow{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.arrow span i{
+    font-size: 50px;
+    color: rgba(221, 218, 218, 0.548);
+}
+
+.text-area-1{
+    height: 110vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    
+
+}
+
+.text-1{
+   width: 65% ;
+  
+}
+
+.text-1 *{
+    text-align: center;
+}
+.text-1 button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin-bottom: 10px;
+}
+
+.text-1 h3{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: rgb(114, 102, 102);
+}
+.text-1 h1{
+    margin: 0px;
+}
+
+.text-1 p{
+    margin: 40px 0px;
+    color: rgb(138, 124, 124);
+    line-height: 25px;
+}
+
+
+.text-1 .p-2{
+    width: 75%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.text-1 button{
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(251, 116, 116);
+    outline: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+.serv-text *{
+    color: white;
+}
+
+.serv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serv-text{
+   width: 85%;
+}
+
+.serv-text-left{
+    width: 42%;
+    float: left;
+}
+
+.serv-text-right{
+    width: 58%;
+    float: right;
+    height: 500px;
+}
+
+.serv-text::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.serv-text-left h5{
+    color: rgba(153, 149, 149, 0.692);
+}
+
+.serv-text-left .head h1{
+    font-size: 23px;
+    width: 80%;
+    color: rgba(255, 253, 253, 0.856);
+}
+
+.serv-text-left hr{
+    border: 1px solid rgba(122, 119, 119, 0.767);
+    border-bottom: none ;
+    margin: 25px 0px;
+}
+
+.serv-text-left .serv-sec h2{
+    font-size: 16px;
+    color: rgba(255, 253, 253, 0.856);
+}
+
+.serv-text-left .serv-sec p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(161, 159, 159, 0.76);
+}
+
+.serv-text-right h1{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: rgba(255, 253, 253, 0.856);
+}
+
+.slide-img{
+    padding: 100px 0px;
+}
+
+.slide-head *{
+    text-align: center;
+}
+
+.slide-img-main{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.my-own-item{
+    background-color: tomato;
+    width: 280px;
+   
+}
+
+.img-owl-div{
+    position: relative;
+}
+
+.img-owl-div .img-ab-mo{
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.img-owl-div:hover .img-ab-mo{
+    height: 100%;
+   
+}
+
+.img-owl-div .img-ab-mo button{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 22px;
+    background: none;
+    color: white;
+    border: 3px solid white;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.img-owl-div img{
+    width: 100% !important;
+    height: 340px;
+    margin: 0px auto;
+}
+
+.owl-tx-my *{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.owl-tx-my{
+    padding: 15px;
+}
+
+.fotter-content *{
+    color: white;
+    font-size: 15px;
+}
+
+.fotter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotter-content{
+    width: 90%;
+}
+
+.fotter-about{
+    display: grid;
+    grid-template-columns: 44% 28% 28%;
+}
+
+
+.fotter-about h2{
+    margin: 30px 0px;
+}
+
+.ft-con p,
+.fotter-about .ft-ab p{
+    width: 90%;
+    line-height: 18px;
+    color: rgba(212, 207, 207, 0.828);
+}
+
+.fotter-about span{
+    display: block;
+}
+
+.fotter-about span *{
+    color: rgba(212, 207, 207, 0.828);
+    text-decoration: none;
+    
+}
+
+.fotter-about span i{
+    font-size: 12px;
+    margin: 0px 10px;
+}
+
+.fotter-about span a:hover,
+.fotter-about span a:hover i{
+    color: rgb(218, 90, 90);
+}
+
+.fotter-last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotter-last *{
+    color: rgba(212, 207, 207, 0.828);
+}
+
+.fotter-content hr{
+    margin: 45px 0px;
+    border: 1px solid rgba(212, 207, 207, 0.828);
+    border-bottom: none;
+}
